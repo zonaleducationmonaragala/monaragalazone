@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="si" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>මොනරාගල කලාප අධ්‍යාපන කාර්යාලය | Monaragala Zonal Education Office</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Sinhala:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Noto Sans Sinhala', 'Noto Sans Tamil', 'Inter', sans-serif;
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+        .lang-btn.active {
+            background-color: #0d9488;
+            color: #ffffff;
+            border-color: #14b8a6;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-teal-400 selection:text-slate-950">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-teal-600 via-indigo-600 to-teal-600 text-white text-xs font-medium py-2 px-4">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+           
+
+            <div class="flex items-center space-x-4 text-[11px] text-slate-200">
+                <span class="lang-content lang-si active"><i class="fa-solid fa-clock text-teal-300 mr-1"></i> පෙ.ව. 8:30 - ප.ව. 4:15 (සඳුදා - සිකුරාදා)</span>
+                <span class="lang-content lang-en"><i class="fa-solid fa-clock text-teal-300 mr-1"></i> 8:30 AM - 4:15 PM (Mon - Fri)</span>
+                <span class="lang-content lang-ta"><i class="fa-solid fa-clock text-teal-300 mr-1"></i> மு.ப 8:30 - பி.ப 4:15 (திங்கள் - வெள்ளி)</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-envelope text-teal-300 mr-1"></i> zonaleducationmonaragala@gmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. Header & Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-slate-800/80">
+        <div class="container mx-auto px-4 md:px-8 py-3 flex justify-between items-center">
+            
+            <!-- Brand Logo & Title -->
+            <a href="#home" class="flex items-center space-x-3.5 group">
+                <div class="w-11 h-11 md:w-12 md:h-12 bg-white/95 rounded-2xl flex items-center justify-center p-1.5 shadow-lg ring-1 ring-white/20 transition duration-300 group-hover:scale-105">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Emblem_of_Sri_Lanka.svg/500px-Emblem_of_Sri_Lanka.svg.png?_=20201228183927" alt="Sri Lanka Emblem" class="object-contain h-full">
+                </div>
+                <div>
+                    <!-- Sinhala Header -->
+                    <div class="lang-content lang-si active">
+                        <h1 class="text-base md:text-lg font-semibold tracking-tight text-white group-hover:text-teal-400 transition">මොනරාගල කලාප අධ්‍යාපන කාර්යාලය</h1>
+                        <p class="text-[10px] md:text-xs text-slate-400 font-medium tracking-wider uppercase">Monaragala Zonal Education Office</p>
+                    </div>
+                    <!-- English Header -->
+                    <div class="lang-content lang-en">
+                        <h1 class="text-base md:text-lg font-semibold tracking-tight text-white group-hover:text-teal-400 transition">Monaragala Zonal Education Office</h1>
+                        <p class="text-[10px] md:text-xs text-slate-400 font-medium tracking-wider uppercase">Uva Provincial Department of Education</p>
+                    </div>
+                    <!-- Tamil Header -->
+                    <div class="lang-content lang-ta">
+                        <h1 class="text-base md:text-lg font-semibold tracking-tight text-white group-hover:text-teal-400 transition">மொணராகலை வலையக் கல்வி அலுவலகம்</h1>
+                        <p class="text-[10px] md:text-xs text-slate-400 font-medium tracking-wider uppercase">Monaragala Zonal Education Office</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Navigation + Language Selector -->
+            <div class="hidden lg:flex items-center space-x-4">
+                <!-- Desktop Navigation Links -->
+                <nav class="flex items-center space-x-1 text-sm font-medium bg-slate-900/60 p-1.5 rounded-full border border-slate-800">
+                    <!-- Sinhala Links -->
+                    <div class="lang-content lang-si active space-x-1">
+                        <a href="#home" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">මුල් පිටුව</a>
+                        <a href="#director" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">අධ්‍යක්ෂ පණිවිඩය</a>
+                        <a href="#gallery" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">ගැලරිය</a>
+                        <a href="#services" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">සේවාවන්</a>
+                        <a href="#downloads" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">බාගත කිරීම්</a>
+                        <a href="#contact" class="px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/20 hover:bg-teal-500/20 transition duration-200">සම්බන්ධතා</a>
+                    </div>
+                    <!-- English Links -->
+                    <div class="lang-content lang-en space-x-1">
+                        <a href="#home" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">Home</a>
+                        <a href="#director" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">Director's Message</a>
+                        <a href="#gallery" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">Gallery</a>
+                        <a href="#services" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">Services</a>
+                        <a href="#downloads" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">Downloads</a>
+                        <a href="#contact" class="px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/20 hover:bg-teal-500/20 transition duration-200">Contact</a>
+                    </div>
+                    <!-- Tamil Links -->
+                    <div class="lang-content lang-ta space-x-1">
+                        <a href="#home" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">முகப்பு</a>
+                        <a href="#director" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">பணிப்பாளர் செய்தி</a>
+                        <a href="#gallery" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">படத்தொகுப்பு</a>
+                        <a href="#services" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">சேவைகள்</a>
+                        <a href="#downloads" class="px-4 py-1.5 rounded-full hover:bg-slate-800 hover:text-teal-400 transition duration-200">பதிவிறக்கங்கள்</a>
+                        <a href="#contact" class="px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/20 hover:bg-teal-500/20 transition duration-200">தொடர்புகள்</a>
+                    </div>
+                </nav>
+
+                <!-- Language Switcher Pills -->
+                <div class="flex items-center space-x-1 bg-slate-900/80 p-1 rounded-xl border border-slate-800 text-xs font-semibold">
+                    <button onclick="setLanguage('si')" id="btn-si" class="lang-btn active px-2.5 py-1 rounded-lg border border-transparent transition">සිං</button>
+                    <button onclick="setLanguage('en')" id="btn-en" class="lang-btn px-2.5 py-1 rounded-lg border border-transparent transition text-slate-400 hover:text-white">EN</button>
+                    <button onclick="setLanguage('ta')" id="btn-ta" class="lang-btn px-2.5 py-1 rounded-lg border border-transparent transition text-slate-400 hover:text-white">தமி</button>
+                </div>
+            </div>
+
+            <!-- Mobile Actions -->
+            <div class="flex items-center space-x-2 lg:hidden">
+                <!-- Mobile Language Selector Dropdown -->
+                <select onchange="setLanguage(this.value)" class="bg-slate-900 text-slate-300 text-xs border border-slate-800 rounded-lg px-2 py-1.5 focus:outline-none">
+                    <option value="si">සිං</option>
+                    <option value="en">EN</option>
+                    <option value="ta">தமி</option>
+                </select>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" aria-label="Toggle Navigation Menu" class="text-slate-300 hover:text-white focus:outline-none p-2 rounded-xl bg-slate-900 border border-slate-800">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-950/95 backdrop-blur-xl border-b border-slate-800 px-6 py-4 space-y-2">
+            <div class="lang-content lang-si active">
+                <a href="#home" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">මුල් පිටුව</a>
+                <a href="#director" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">අධ්‍යක්ෂ පණිවිඩය</a>
+                <a href="#gallery" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">ඡායාරූප ගැලරිය</a>
+                <a href="#services" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">සේවාවන්</a>
+                <a href="#downloads" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">බාගත කිරීම්</a>
+                <a href="#contact" class="block text-teal-400 font-medium py-2.5">සම්බන්ධතා</a>
+            </div>
+            <div class="lang-content lang-en">
+                <a href="#home" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">Home</a>
+                <a href="#director" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">Director's Message</a>
+                <a href="#gallery" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">Gallery</a>
+                <a href="#services" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">Services</a>
+                <a href="#downloads" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">Downloads</a>
+                <a href="#contact" class="block text-teal-400 font-medium py-2.5">Contact</a>
+            </div>
+            <div class="lang-content lang-ta">
+                <a href="#home" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">முகப்பு</a>
+                <a href="#director" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">பணிப்பாளர் செய்தி</a>
+                <a href="#gallery" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">படத்தொகுப்பு</a>
+                <a href="#services" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">சேவைகள்</a>
+                <a href="#downloads" class="block text-slate-300 hover:text-teal-400 py-2.5 font-medium border-b border-slate-900">பதிவிறக்கங்கள்</a>
+                <a href="#contact" class="block text-teal-400 font-medium py-2.5">தொடர்புகள்</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section & Vision/Mission -->
+    <section id="home" class="relative py-16 lg:py-24 overflow-hidden">
+        <!-- Background Hero Image Overlay -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1600')] bg-cover bg-center opacity-10 filter grayscale"></div>
+        
+        <!-- Ambient Glowing Elements -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-teal-500/15 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            
+            <!-- Heading Banner Image -->
+            <div class="max-w-5xl mx-auto mb-10 overflow-hidden rounded-3xl border border-slate-800 shadow-2xl">
+                <img src="images/main.jpeg" alt="Monaragala Zonal Education Office Banner" class="w-full h-auto max-h-[900px] object-cover">
+            </div>
+
+            <!-- Sinhala Hero -->
+            <div class="lang-content lang-si active">
+                <span class="inline-flex items-center gap-2 bg-slate-900/80 text-teal-400 border border-teal-500/30 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide backdrop-blur-md mb-8">
+                    <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span> ඌව පළාත් අධ්‍යාපන දෙපාර්තමේන්තුව
+                </span>
+                
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl font-bold max-w-4xl mx-auto leading-tight sm:leading-tight text-white tracking-tight">
+                    මොනරාගල ගුණාත්මක අධ්‍යාපනයක් උදෙසා <br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-400 to-cyan-400">පෙරගමන්කරු</span>
+                </h2>
+            </div>
+
+            <!-- English Hero -->
+            <div class="lang-content lang-en">
+                <span class="inline-flex items-center gap-2 bg-slate-900/80 text-teal-400 border border-teal-500/30 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide backdrop-blur-md mb-8">
+                    <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span> Provincial Department of Education - Uva
+                </span>
+                
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl font-bold max-w-4xl mx-auto leading-tight sm:leading-tight text-white tracking-tight">
+                    Pioneering Quality Education in <br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-400 to-cyan-400">Monaragala Zone</span>
+                </h2>
+            </div>
+
+            <!-- Tamil Hero -->
+            <div class="lang-content lang-ta">
+                <span class="inline-flex items-center gap-2 bg-slate-900/80 text-teal-400 border border-teal-500/30 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide backdrop-blur-md mb-8">
+                    <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span> ஊவா மாகாண கல்வித் திணைக்களம்
+                </span>
+                
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl font-bold max-w-4xl mx-auto leading-tight sm:leading-tight text-white tracking-tight">
+                    மொணராகலையில் தரமான கல்வியை <br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-400 to-cyan-400">முன்னெடுப்போம்</span>
+                </h2>
+            </div>
+
+            <!-- Vision and Mission Grid -->
+            <div class="grid md:grid-cols-2 gap-6 mt-16 max-w-5xl mx-auto text-left">
+                <!-- Vision Card -->
+                <div class="relative group bg-slate-900/60 backdrop-blur-xl p-8 rounded-3xl border border-slate-800 hover:border-teal-500/30 transition duration-300 shadow-2xl">
+                    <div class="w-12 h-12 bg-teal-500/10 rounded-2xl flex items-center justify-center text-teal-400 text-xl mb-6 border border-teal-500/20">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <!-- Sinhala Vision -->
+                    <div class="lang-content lang-si active">
+                        <h3 class="text-lg font-semibold mb-3 text-white">අපගේ දැක්ම</h3>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed font-light">
+                            "ගුණ නැණ බෙලෙන් පිරිපුන්ව අභිමානයෙන් පෙරටම."
+                        </p>
+                    </div>
+                    <!-- English Vision -->
+                    <div class="lang-content lang-en">
+                        <h3 class="text-lg font-semibold mb-3 text-white">Our Vision</h3>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed font-light">
+                            "Moving forward with pride, enriched in virtues, knowledge, and wisdom."
+                        </p>
+                    </div>
+                    <!-- Tamil Vision -->
+                    <div class="lang-content lang-ta">
+                        <h3 class="text-lg font-semibold mb-3 text-white">எமது தொலைநோக்கு</h3>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed font-light">
+                            "நற்பண்புகள், அறிவு மற்றும் ஆற்றல்களுடன் பெருமிதத்துடன் முன்னோக்கிச் செல்லல்."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="relative group bg-slate-900/60 backdrop-blur-xl p-8 rounded-3xl border border-slate-800 hover:border-teal-500/30 transition duration-300 shadow-2xl">
+                    <div class="w-12 h-12 bg-teal-500/10 rounded-2xl flex items-center justify-center text-teal-400 text-xl mb-6 border border-teal-500/20">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <!-- Sinhala Mission -->
+                    <div class="lang-content lang-si active">
+                        <h3 class="text-lg font-semibold mb-3 text-white">අපගේ මෙහෙවර</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            "මොනරාගල අධ්‍යාපන කලාපයේ පාසල් වලට යන සියලුම දරුවන්ගේ ශාරීරික, මානසික, අධ්‍යාත්මික සහ චිත්තවේගීය සංවර්ධනය සාක්ෂාත් කර ගැනීම, අපගේ සේවා ලබන්නන්ගේ අවශ්‍යතා කාර්යක්ෂමව, ඵලදායිව සහ මුළු චිත්තවේගීය සපුරාලීම සහ හෙට දවසේ අභියෝග ජය ගන්නා දක්ෂ, නිර්මාණශීලි සහ ගුණවත් දරුවන් ලෝකයට ලබාදීම."
+                        </p>
+                    </div>
+                    <!-- English Mission -->
+                    <div class="lang-content lang-en">
+                        <h3 class="text-lg font-semibold mb-3 text-white">Our Mission</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            "Achieving physical, mental, spiritual, and emotional development of all children attending schools in Monaragala Education Zone, fulfilling stakeholder needs efficiently and effectively, and presenting skilled, creative, and virtuous children to conquer tomorrow's challenges."
+                        </p>
+                    </div>
+                    <!-- Tamil Mission -->
+                    <div class="lang-content lang-ta">
+                        <h3 class="text-lg font-semibold mb-3 text-white">எமது பணிக்குறிக்கோள்</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            "மொணராகலை கல்வி வலையத்தில் உள்ள அனைத்து மாணவர்களினதும் உடலியல், உளவியல், ஆன்மீக மற்றும் உணர்வுபூர்வமான வளர்ச்சியை உறுதிசெய்து, திறமையான மற்றும் நற்பண்புள்ள எதிர்கால தலைமுறையை உருவாக்குதல்."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Statistics -->
+    <section class="py-12 bg-slate-900/80 border-y border-slate-800/80">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-2xl bg-slate-950/40 border border-slate-800/60">
+                    <div class="text-2xl md:text-4xl font-bold text-teal-400 mb-1">150+</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-si active">පාසල් සංඛ්‍යාව</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-en">Total Schools</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-ta">பாடசாலைகள்</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-950/40 border border-slate-800/60">
+                    <div class="text-2xl md:text-4xl font-bold text-teal-400 mb-1">2,500+</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-si active">ගුරු භවතුන්</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-en">Teachers</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-ta">ஆசிரியர்கள்</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-950/40 border border-slate-800/60">
+                    <div class="text-2xl md:text-4xl font-bold text-teal-400 mb-1">35,000+</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-si active">සිසු සිසුවියන්</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-en">Students</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-ta">மாணவர்கள்</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-950/40 border border-slate-800/60">
+                    <div class="text-2xl md:text-4xl font-bold text-teal-400 mb-1">03</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-si active">කොට්ඨාස සංඛ්‍යාව</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-en">Divisions</div>
+                    <div class="text-xs md:text-sm text-slate-400 lang-content lang-ta">பிரிவுகள்</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Director's Message Section -->
+    <section id="director" class="py-24 bg-slate-950 relative">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <!-- Director Image Card -->
+                <div class="md:col-span-5 text-center">
+                    <div class="relative inline-block group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-teal-500 to-indigo-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                        <img src="images/dir.jpeg" onError="this.src='DSC1574 .jpg'" alt="Zonal Director" class="relative rounded-2xl shadow-2xl w-64 h-80 object-cover border border-slate-700 mx-auto">
+                        <div class="absolute -bottom-4 right-2 bg-slate-900/90 text-teal-400 border border-teal-500/30 backdrop-blur-md font-semibold px-4 py-2 rounded-xl text-xs tracking-wide">
+                            <span class="lang-content lang-si active">කලාප අධ්‍යාපන අධ්‍යක්ෂ</span>
+                            <span class="lang-content lang-en">Zonal Education Director</span>
+                            <span class="lang-content lang-ta">வலையக் கல்விப் பணிப்பாளர்</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Content -->
+                <div class="md:col-span-7 space-y-4">
+                    <div class="inline-flex items-center gap-2 text-teal-400 text-xs font-semibold tracking-wider uppercase">
+                        <span class="w-1.5 h-1.5 rounded-full bg-teal-400"></span> 
+                        <span class="lang-content lang-si active">පිළිගැනීමේ පණිවිඩය</span>
+                        <span class="lang-content lang-en">Welcome Message</span>
+                        <span class="lang-content lang-ta">வரவேற்புச் செய்தி</span>
+                    </div>
+
+                    <!-- Sinhala Message -->
+                    <div class="lang-content lang-si active space-y-3">
+                        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">කලාප අධ්‍යාපන අධ්‍යක්ෂතුමියගේ පණිවිඩය</h2>
+                        <p class="text-slate-400 leading-relaxed italic text-sm md:text-base pt-2 font-light">
+                            "මොනරාගල අධ්‍යාපන කලාපයේ නිල වෙබ් අඩවිය වෙත ඔබ සැම සාදරයෙන් පිළිගනිමු. නවීන තාක්ෂණය උපයෝගී කර ගනිමින් කලාපයේ සියලුම ගුරුවරුන්, සිසුන් මෙන්ම දෙමාපියන් හට කාර්යක්ෂම සහ විනිවිදභාවයෙන් යුතු සේවාවක් සැපයීම අපගේ අරමුණයි. මෙමගින් අපගේ සේවාවන් වඩාත් සමීපව ලබා දීමට හැකිවනු ඇතැයි මම විශ්වාස කරමි."
+                        </p>
+                        <div class="pt-4 border-t border-slate-800">
+                            <h4 class="font-semibold text-white text-base">එම්.කේ හර්ෂණී සමිරා</h4>
+                            <p class="text-xs text-slate-500 font-medium">කලාප අධ්‍යාපන අධ්‍යක්ෂ, මොනරාගල</p>
+                        </div>
+                    </div>
+
+                    <!-- English Message -->
+                    <div class="lang-content lang-en space-y-3">
+                        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Message from the Zonal Director</h2>
+                        <p class="text-slate-400 leading-relaxed italic text-sm md:text-base pt-2 font-light">
+                            "Welcome to the official website of the Monaragala Zonal Education Office. Our goal is to leverage modern technology to provide transparent, efficient, and reliable services to all teachers, students, and parents within our zone. I believe this portal will bring our administrative services closer to you."
+                        </p>
+                        <div class="pt-4 border-t border-slate-800">
+                            <h4 class="font-semibold text-white text-base">M.K. Harshani Sameera</h4>
+                            <p class="text-xs text-slate-500 font-medium">Zonal Director of Education, Monaragala</p>
+                        </div>
+                    </div>
+
+                    <!-- Tamil Message -->
+                    <div class="lang-content lang-ta space-y-3">
+                        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">வலையக் கல்விப் பணிப்பாளரின் செய்தி</h2>
+                        <p class="text-slate-400 leading-relaxed italic text-sm md:text-base pt-2 font-light">
+                            "மொணராகலை வலையக் கல்வி அலுவலகத்தின் உத்தியோகபூர்வ இணையத்தளத்திற்கு உங்களை அன்புடன் வரவேற்கிறோம். நவீன தொழில்நுட்பத்தைப் பயன்படுத்தி எமது வலையத்தின் ஆசிரியர்கள், மாணவர்கள் மற்றும் பெற்றோருக்கு வெளிப்படையான மற்றும் திறமையான சேவையை வழங்குவதே எமது நோக்கமாகும்."
+                        </p>
+                        <div class="pt-4 border-t border-slate-800">
+                            <h4 class="font-semibold text-white text-base">எம்.கே. ஹர்ஷணி சமீரா</h4>
+                            <p class="text-xs text-slate-500 font-medium">வலையக் கல்விப் பணிப்பாளர், மொணராகலை</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 4. Services Section -->
+    <section id="services" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold text-teal-400 uppercase tracking-widest lang-content lang-si active">පහසුකම් සහ සේවා</span>
+                <span class="text-xs font-semibold text-teal-400 uppercase tracking-widest lang-content lang-en">Facilities & Services</span>
+                <span class="text-xs font-semibold text-teal-400 uppercase tracking-widest lang-content lang-ta">சேவைகள்</span>
+
+                <h2 class="text-3xl font-bold text-white lang-content lang-si active">අප විසින් සපයනු ලබන සේවාවන්</h2>
+                <h2 class="text-3xl font-bold text-white lang-content lang-en">Services Offered by the Zonal Office</h2>
+                <h2 class="text-3xl font-bold text-white lang-content lang-ta">நாங்கள் வழங்கும் சேவைகள்</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Service 1 -->
+                <div class="bg-slate-900/40 p-8 rounded-3xl border border-slate-800/80 hover:border-teal-500/30 hover:bg-slate-900/80 transition duration-300 group">
+                    <div class="w-12 h-12 bg-slate-800 text-teal-400 rounded-2xl flex items-center justify-center text-xl mb-6 group-hover:bg-teal-500 group-hover:text-slate-950 transition duration-300">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <!-- Sinhala Service -->
+                    <div class="lang-content lang-si active">
+                        <h3 class="text-base font-semibold text-white mb-3">පාසල් සංවර්ධන කටයුතු</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">කලාපයේ සියලුම පාසල්වල යටිතල පහසුකම් සහ අධ්‍යයන මට්ටම ඉහළ නැංවීමේ සම්බන්ධීකරණ කටයුතු.</p>
+                    </div>
+                    <!-- English Service -->
+                    <div class="lang-content lang-en">
+                        <h3 class="text-base font-semibold text-white mb-3">School Development</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">Coordinating infrastructure developments and enhancing educational standards across all zonal schools.</p>
+                    </div>
+                    <!-- Tamil Service -->
+                    <div class="lang-content lang-ta">
+                        <h3 class="text-base font-semibold text-white mb-3">பாடசாலை அபிவிருத்தி</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">வலையத்தில் உள்ள அனைத்து பாடசாலைகளின் உட்கட்டமைப்பு மற்றும் கல்வித் தரத்தை மேம்படுத்துதல்.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/40 p-8 rounded-3xl border border-slate-800/80 hover:border-teal-500/30 hover:bg-slate-900/80 transition duration-300 group">
+                    <div class="w-12 h-12 bg-slate-800 text-teal-400 rounded-2xl flex items-center justify-center text-xl mb-6 group-hover:bg-teal-500 group-hover:text-slate-950 transition duration-300">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <!-- Sinhala Service -->
+                    <div class="lang-content lang-si active">
+                        <h3 class="text-base font-semibold text-white mb-3">ගුරු හා විදුහල්පති පරිපාලනය</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">ගුරු මාරුවීම්, වැටුප් ගැටලු, උසස්වීම් සහ අනෙකුත් සියලුම පරිපාලනමය අවශ්‍යතා ඉටුකිරීම.</p>
+                    </div>
+                    <!-- English Service -->
+                    <div class="lang-content lang-en">
+                        <h3 class="text-base font-semibold text-white mb-3">Teacher & Principal Administration</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">Managing teacher transfers, salary increments, promotions, and all administrative inquiries.</p>
+                    </div>
+                    <!-- Tamil Service -->
+                    <div class="lang-content lang-ta">
+                        <h3 class="text-base font-semibold text-white mb-3">ஆசிரியர் மற்றும் அதிபர் நிர்வாகம்</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">ஆசிரியர் இடமாற்றங்கள், சம்பளப் பிரச்சினைகள், பதவியுயர்வுகள் மற்றும் நிர்வாக விஷயங்களை நிர்வகித்தல்.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/40 p-8 rounded-3xl border border-slate-800/80 hover:border-teal-500/30 hover:bg-slate-900/80 transition duration-300 group">
+                    <div class="w-12 h-12 bg-slate-800 text-teal-400 rounded-2xl flex items-center justify-center text-xl mb-6 group-hover:bg-teal-500 group-hover:text-slate-950 transition duration-300">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <!-- Sinhala Service -->
+                    <div class="lang-content lang-si active">
+                        <h3 class="text-base font-semibold text-white mb-3">විභාග සහ ඇගයීම්</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">කලාපීය වාර විභාග පැවැත්වීම, ලකුණු ලේඛන සැකසීම සහ ජාතික විභාග සම්බන්ධීකරණය.</p>
+                    </div>
+                    <!-- English Service -->
+                    <div class="lang-content lang-en">
+                        <h3 class="text-base font-semibold text-white mb-3">Exams & Evaluations</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">Conducting zonal term evaluation exams, performance tracking, and national exam coordination.</p>
+                    </div>
+                    <!-- Tamil Service -->
+                    <div class="lang-content lang-ta">
+                        <h3 class="text-base font-semibold text-white mb-3">பரீட்சைகள் மற்றும் மதிப்பீடுகள்</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">தவணைப் பரீட்சைகளை நடத்துதல், புள்ளிப் பட்டியல்களைத் தயாரித்தல் மற்றும் தேசியப் பரீட்சைகளை ஒருங்கிணைத்தல்.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Downloads: Circulars & Forms -->
+    <section id="downloads" class="py-24 bg-slate-900/30 border-t border-slate-800/60">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold text-teal-400 uppercase tracking-widest lang-content lang-si active">බාගත කිරීම් මධ්‍යස්ථානය</span>
+                <span class="text-xs font-semibold text-teal-400 uppercase tracking-widest lang-content lang-en">Downloads Center</span>
+                <span class="text-xs font-semibold text-teal-400 uppercase tracking-widest lang-content lang-ta">பதிவிறக்க மையம்</span>
+
+                <h2 class="text-3xl font-bold text-white lang-content lang-si active">චක්‍රලේඛ සහ ආකෘතිපත්‍ර</h2>
+                <h2 class="text-3xl font-bold text-white lang-content lang-en">Circulars & Official Forms</h2>
+                <h2 class="text-3xl font-bold text-white lang-content lang-ta">சுற்றறிக்கைகள் மற்றும் படிவங்கள்</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <!-- Application Forms -->
+                <div class="space-y-4">
+                    <h3 class="text-base font-semibold text-white border-b border-slate-800 pb-3 flex items-center justify-between">
+                        <span class="flex items-center">
+                            <i class="fa-solid fa-file-pdf text-rose-400 mr-2.5"></i> 
+                            <span class="lang-content lang-si active">අවශ්‍ය ආකෘති පත්‍ර</span>
+                            <span class="lang-content lang-en">Application Forms</span>
+                            <span class="lang-content lang-ta">விண்ணப்பப் படிவங்கள்</span>
+                        </span>
+                        <span class="text-xs font-normal text-slate-500">PDF Documents</span>
+                    </h3>
+
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-4 bg-slate-900/60 border border-slate-800/80 rounded-2xl hover:border-slate-700 transition">
+                            <span class="font-medium text-slate-300 text-sm lang-content lang-si active">ගුරු මාරු අයදුම්පත</span>
+                            <span class="font-medium text-slate-300 text-sm lang-content lang-en">Teacher Transfer Application</span>
+                            <span class="font-medium text-slate-300 text-sm lang-content lang-ta">ஆசிரியர் இடமாற்ற விண்ணப்பம்</span>
+
+                            <a href="#" class="bg-teal-500/10 hover:bg-teal-500/20 text-teal-400 text-xs px-3 py-2 rounded-xl font-medium border border-teal-500/20 flex items-center space-x-1.5 transition">
+                                <i class="fa-solid fa-download"></i> 
+                                <span class="lang-content lang-si active">බාගන්න</span>
+                                <span class="lang-content lang-en">Download</span>
+                                <span class="lang-content lang-ta">பதிவிறக்க</span>
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-slate-900/60 border border-slate-800/80 rounded-2xl hover:border-slate-700 transition">
+                            <span class="font-medium text-slate-300 text-sm lang-content lang-si active">වැටුප් වර්ධක අයදුම්පත</span>
+                            <span class="font-medium text-slate-300 text-sm lang-content lang-en">Salary Increment Application Form</span>
+                            <span class="font-medium text-slate-300 text-sm lang-content lang-ta">சம்பள உயர்வு விண்ணப்பப் படிவம்</span>
+
+                            <a href="#" class="bg-teal-500/10 hover:bg-teal-500/20 text-teal-400 text-xs px-3 py-2 rounded-xl font-medium border border-teal-500/20 flex items-center space-x-1.5 transition">
+                                <i class="fa-solid fa-download"></i> 
+                                <span class="lang-content lang-si active">බාගන්න</span>
+                                <span class="lang-content lang-en">Download</span>
+                                <span class="lang-content lang-ta">பதிவிறக்க</span>
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-slate-900/60 border border-slate-800/80 rounded-2xl hover:border-slate-700 transition">
+                            <span class="font-medium text-slate-300 text-sm lang-content lang-si active">විශ්‍රාම වැටුප් අයදුම්පත්‍රය</span>
+                            <span class="font-medium text-slate-300 text-sm lang-content lang-en">Pension Application Form</span>
+                            <span class="font-medium text-slate-300 text-sm lang-content lang-ta">ஓய்வூதிய விண்ணப்பப் படிவம்</span>
+
+                            <a href="#" class="bg-teal-500/10 hover:bg-teal-500/20 text-teal-400 text-xs px-3 py-2 rounded-xl font-medium border border-teal-500/20 flex items-center space-x-1.5 transition">
+                                <i class="fa-solid fa-download"></i> 
+                                <span class="lang-content lang-si active">බාගන්න</span>
+                                <span class="lang-content lang-en">Download</span>
+                                <span class="lang-content lang-ta">பதிவிறக்க</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Latest Circulars -->
+                <div class="space-y-4">
+                    <h3 class="text-base font-semibold text-white border-b border-slate-800 pb-3 flex items-center justify-between">
+                        <span class="flex items-center">
+                            <i class="fa-solid fa-bullhorn text-amber-400 mr-2.5"></i> 
+                            <span class="lang-content lang-si active">නවතම චක්‍රලේඛ</span>
+                            <span class="lang-content lang-en">Recent Circulars</span>
+                            <span class="lang-content lang-ta">சமீபத்திய சுற்றறிக்கைகள்</span>
+                        </span>
+                        <span class="text-xs font-normal text-slate-500">Updates</span>
+                    </h3>
+
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-4 bg-slate-900/60 border border-slate-800/80 rounded-2xl hover:border-slate-700 transition">
+                            <div>
+                                <span class="font-medium text-slate-300 text-sm block lang-content lang-si active">2026/01 ගුරු වාර්ෂික ස්ථාන මාරු චක්‍රලේඛය</span>
+                                <span class="font-medium text-slate-300 text-sm block lang-content lang-en">2026/01 Annual Teacher Transfer Circular</span>
+                                <span class="font-medium text-slate-300 text-sm block lang-content lang-ta">2026/01 வருடாந்த ஆசிரியர் இடமாற்ற சுற்றறிக்கை</span>
+
+                                <span class="text-xs text-slate-500 flex items-center gap-1 mt-1"><i class="fa-regular fa-calendar"></i> 2026.01.15</span>
+                            </div>
+                            <a href="#" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-3 py-2 rounded-xl font-medium border border-slate-700 flex items-center space-x-1.5 transition">
+                                <i class="fa-solid fa-eye"></i> 
+                                <span class="lang-content lang-si active">බලන්න</span>
+                                <span class="lang-content lang-en">View</span>
+                                <span class="lang-content lang-ta">பார்க்க</span>
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-slate-900/60 border border-slate-800/80 rounded-2xl hover:border-slate-700 transition">
+                            <div>
+                                <span class="font-medium text-slate-300 text-sm block lang-content lang-si active">2026/05 පාසල් නිවාඩු දින දර්ශන චක්‍රලේඛය</span>
+                                <span class="font-medium text-slate-300 text-sm block lang-content lang-en">2026/05 School Academic Calendar Circular</span>
+                                <span class="font-medium text-slate-300 text-sm block lang-content lang-ta">2026/05 பாடசாலை விடுமுறை நாட்காட்டி சுற்றறிக்கை</span>
+
+                                <span class="text-xs text-slate-500 flex items-center gap-1 mt-1"><i class="fa-regular fa-calendar"></i> 2026.02.10</span>
+                            </div>
+                            <a href="#" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-3 py-2 rounded-xl font-medium border border-slate-700 flex items-center space-x-1.5 transition">
+                                <i class="fa-solid fa-eye"></i> 
+                                <span class="lang-content lang-si active">බලන්න</span>
+                                <span class="lang-content lang-en">View</span>
+                                <span class="lang-content lang-ta">பார்க்க</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer & Contact Directory -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="container mx-auto px-6 max-w-6xl grid md:grid-cols-3 gap-12 pb-12">
+            
+            <!-- Address & Main Phone -->
+            <div class="space-y-4">
+                <h4 class="text-white font-semibold text-sm tracking-wide uppercase lang-content lang-si active">සම්බන්ධීකරණය</h4>
+                <h4 class="text-white font-semibold text-sm tracking-wide uppercase lang-content lang-en">Contact Info</h4>
+                <h4 class="text-white font-semibold text-sm tracking-wide uppercase lang-content lang-ta">தொடர்பு விபரம்</h4>
+
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-location-dot text-teal-400 mt-1"></i>
+                        <span class="lang-content lang-si active">කලාප අධ්‍යාපන කාර්යාලය, මොනරාගල.</span>
+                        <span class="lang-content lang-en">Zonal Education Office, Monaragala, Sri Lanka.</span>
+                        <span class="lang-content lang-ta">வலையக் கல்வி அலுவலகம், மொணராகலை.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone text-teal-400"></i>
+                        <span>055-2276070 / 055-2276249</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-envelope text-teal-400"></i>
+                        <a href="mailto:zonaleducationmonaragala@gmail.com" class="hover:text-teal-400 transition">zonaleducationmonaragala@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Phone Directory -->
+            <div class="space-y-4">
+                <h4 class="text-white font-semibold text-sm tracking-wide uppercase lang-content lang-si active">අංශ දුරකථන අංක</h4>
+                <h4 class="text-white font-semibold text-sm tracking-wide uppercase lang-content lang-en">Department Directory</h4>
+                <h4 class="text-white font-semibold text-sm tracking-wide uppercase lang-content lang-ta">பிரிவு தொலைபேசி எண்கள்</h4>
+
+                <ul class="space-y-2 text-xs md:text-sm">
+                    <li class="flex justify-between border-b border-slate-900 pb-1">
+                        <span class="lang-content lang-si active">සංවර්ධන අංශය:</span>
+                        <span class="lang-content lang-en">Development Branch:</span>
+                        <span class="lang-content lang-ta">அபிவிருத்திப் பிரிவு:</span>
+                        <span class="text-slate-200">0552277662</span>
+                    </li>
+                    <li class="flex justify-between border-b border-slate-900 pb-1">
+                        <span class="lang-content lang-si active">සැලසුම් අංශය:</span>
+                        <span class="lang-content lang-en">Planning Branch:</span>
+                        <span class="lang-content lang-ta">திட்டமிடல் பிரிவு:</span>
+                        <span class="text-slate-200">0552277661</span>
+                    </li>
+                    <li class="flex justify-between border-b border-slate-900 pb-1">
+                        <span class="lang-content lang-si active">ගණකාධිකාරී:</span>
+                        <span class="lang-content lang-en">Accounts Branch:</span>
+                        <span class="lang-content lang-ta">கணக்குக் கிளை:</span>
+                        <span class="text-slate-200">055-2276171</span>
+                    </li>
+                    <li class="flex justify-between border-b border-slate-900 pb-1">
+                        <span class="lang-content lang-si active">ගොඩනැගිලි අංශය:</span>
+                        <span class="lang-content lang-en">Buildings Division:</span>
+                        <span class="lang-content lang-ta">கட்டிடப் பிரிவு:</span>
+                        <span class="text-slate-200">055-2276094</span>
+                    </li>
+                    <li class="flex justify-between pb-1">
+                        <span class="lang-content lang-si active">ෆැක්ස්:</span>
+                        <span class="lang-content lang-en">Fax:</span>
+                        <span class="lang-content lang-ta">தொலைநகல்:</span>
+                        <span class="text-slate-200">055-2277570</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Links & Socials -->
+            <div class="space-y-4">
+                <h4 class="text-white font-semibold text-sm tracking-wide uppercase lang-content lang-si active">වැදගත් වෙබ් අඩවි</h4>
+                <h4 class="text-white font-semibold text-sm tracking-wide uppercase lang-content lang-en">Quick Links</h4>
+                <h4 class="text-white font-semibold text-sm tracking-wide uppercase lang-content lang-ta">முக்கிய இணைப்புகள்</h4>
+
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <a href="https://moe.gov.lk/en/welcome/" target="_blank" class="hover:text-teal-400 transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-chevron-right text-[10px] text-teal-400"></i> 
+                            <span class="lang-content lang-si active">අධ්‍යාපන අමාත්‍යාංශය (MoE)</span>
+                            <span class="lang-content lang-en">Ministry of Education (MoE)</span>
+                            <span class="lang-content lang-ta">கல்வி அமைச்சு (MoE)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.doenets.lk/" target="_blank" class="hover:text-teal-400 transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-chevron-right text-[10px] text-teal-400"></i> 
+                            <span class="lang-content lang-si active">විභාග දෙපාර්තමේන්තුව</span>
+                            <span class="lang-content lang-en">Department of Examinations</span>
+                            <span class="lang-content lang-ta">பரீட்சைத் திணைக்களம்</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.edudept.up.gov.lk/upde/" target="_blank" class="hover:text-teal-400 transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-chevron-right text-[10px] text-teal-400"></i> 
+                            <span class="lang-content lang-si active">ඌව පළාත් අධ්‍යාපන දෙපාර්තමේන්තුව</span>
+                            <span class="lang-content lang-en">Uva Provincial Dept. of Education</span>
+                            <span class="lang-content lang-ta">ஊவா மாகாணக் கல்வித் திணைக்களம்</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="pt-2">
+                    <div class="flex space-x-3">
+                        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="w-9 h-9 bg-slate-900 hover:bg-slate-800 hover:text-teal-400 text-slate-400 rounded-xl flex items-center justify-center transition border border-slate-800">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="w-9 h-9 bg-slate-900 hover:bg-slate-800 hover:text-teal-400 text-slate-400 rounded-xl flex items-center justify-center transition border border-slate-800">
+                            <i class="fa-brands fa-youtube text-sm"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)" class="w-9 h-9 bg-slate-900 hover:bg-slate-800 hover:text-teal-400 text-slate-400 rounded-xl flex items-center justify-center transition border border-slate-800">
+                            <i class="fa-brands fa-x-twitter text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-900 pt-6 text-center text-xs text-slate-600">
+            <p class="lang-content lang-si active">&copy; 2026 මොනරාගල කලාප අධ්‍යාපන කාර්යාලය. සියලුම හිමිකම් ඇවිරිණි. | තාක්ෂණික දායකත්වය: තොරතුරු තාක්ෂණ විෂය.</p>
+            <p class="lang-content lang-en">&copy; 2026 Zonal Education Office Monaragala. All Rights Reserved. | Technical Contribution: Information Technology Subject.</p>
+            <p class="lang-content lang-ta">&copy; 2026 வலையக் கல்வி அலுவலகம் மொணராகலை. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை. | தொழில்நுட்பப் பங்களிப்பு: தகவல் தொழில்நுட்பப் பாடம்.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts for Mobile Menu and Language Switcher -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Language switcher function
+        function setLanguage(lang) {
+            // Hide all language content
+            const allContent = document.querySelectorAll('.lang-content');
+            allContent.forEach(el => el.classList.remove('active'));
+
+            // Show selected language content
+            const selectedContent = document.querySelectorAll(`.lang-${lang}`);
+            selectedContent.forEach(el => el.classList.add('active'));
+
+            // Update active pill styling for desktop selector
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active', 'text-white'));
+            
+            const activeBtn = document.getElementById(`btn-${lang}`);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+            }
+
+            // Set dynamic document language attribute
+            document.documentElement.lang = lang;
+        }
+    </script>
+</body>
+</html>
